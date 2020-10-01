@@ -1,0 +1,12 @@
+.result {
+  &__list {
+    padding: 10px;
+  }
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 6px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid grey;
+  }
+}

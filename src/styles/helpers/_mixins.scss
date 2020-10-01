@@ -1,4 +1,11 @@
-@mixin align-center {
-    display: flex;
-    align-items: center;
+@mixin input-placeholder {
+    &::-ms-input-placeholder {
+        color: transparent;
+    }
+    &::-webkit-input-placeholder {
+        color: transparent;
+    }
+    &::-moz-placeholder {
+        color: transparent;
+    }
 }

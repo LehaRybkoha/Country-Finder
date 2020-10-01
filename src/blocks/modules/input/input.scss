@@ -1,0 +1,38 @@
+.input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  background-color: #fff;
+  border-color: #e0e0e0;
+  resize: none;
+  font-family: sans-serif;
+  transition: background-color 0.5s linear;
+  box-shadow: $boxShadowBeforeFocus;
+
+  &:focus {
+    @include input-placeholder;
+    outline: none;
+    box-shadow: $boxShadowWhileFocused;
+  }
+
+  &-block {
+    max-width: fit-content;
+    margin: 0 auto 50px auto;
+  }
+}
+
+.submit-btn {
+  padding: 8px;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: #272727;
+  color: #fff;
+  &:hover {
+    background-color: #c2c2c2;
+    color: #000;
+    transition: background-color 0.1s linear;
+  }
+  &:focus {
+    outline: none;
+  }
+}
